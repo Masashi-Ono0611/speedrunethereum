@@ -17,15 +17,14 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["ipfs-utils"],
 };
 
-// 常に静的エクスポートを有効にする
-nextConfig.output = "export";
-nextConfig.trailingSlash = true;
-nextConfig.images = {
-  unoptimized: true,
-};
+const isIpfs = process.env.NEXT_PUBLIC_IPFS_BUILD === "true";
 
-// ベースパスを設定
-nextConfig.basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-nextConfig.assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+if (isIpfs) {
+  nextConfig.output = "export";
+  nextConfig.trailingSlash = true;
+  nextConfig.images = {
+    unoptimized: true,
+  };
+}
 
 module.exports = nextConfig;
