@@ -1,0 +1,9 @@
+{
+  "name": "Sample Jetton",
+  "symbol": "SAMP",
+  "description": "Sample Jetton for testing Jetton 2.0 deployment.",
+  "decimals": "9",
+  "image": "https://raw.githubusercontent.com/ton-blockchain/ton-assets/master/icons/ton.png",
+  "image_data": "",
+  "amount_style": "TON"
+}
