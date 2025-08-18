@@ -707,7 +707,7 @@ const deployedContracts = {
   },
   11155111: {
     YourCollectible: {
-      address: "0x6220c3B832F9188987F72536519dD4aB05a4503E",
+      address: "0xAEB3185409CA27D578A12C7a6e9967aC1DBf335F",
       abi: [
         {
           inputs: [],
@@ -985,6 +985,19 @@ const deployedContracts = {
           ],
           name: "Transfer",
           type: "event",
+        },
+        {
+          inputs: [],
+          name: "ALLOWED_MINTER",
+          outputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
         },
         {
           inputs: [
@@ -1402,7 +1415,7 @@ const deployedContracts = {
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
-      deployedOnBlock: 9009479,
+      deployedOnBlock: 9009686,
     },
   },
 } as const;

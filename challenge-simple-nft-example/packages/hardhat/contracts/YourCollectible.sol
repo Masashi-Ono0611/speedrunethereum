@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract YourCollectible is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     uint256 public tokenIdCounter;
+    // Only this address can mint
+    address public constant ALLOWED_MINTER = 0x08D811A358850892029251CcC8a565a32fd2dCB8;
 
     constructor() ERC721("YourCollectible", "YCB") Ownable(msg.sender) {}
 
@@ -16,6 +18,7 @@ contract YourCollectible is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable 
     }
 
     function mintItem(address to, string memory uri) public returns (uint256) {
+        require(msg.sender == ALLOWED_MINTER, "Not authorized to mint");
         tokenIdCounter++;
         uint256 tokenId = tokenIdCounter;
         _safeMint(to, tokenId);
