@@ -35,7 +35,7 @@ const scaffoldConfig = {
   // .env.local for local testing, and in the Vercel/system env config for live apps.
   walletConnectProjectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID || "3a8170812b534d0ff9d794f19a901d64",
   // Enable burner wallets on all networks (not only local hardhat)
-  onlyLocalBurnerWallet: false,
+  onlyLocalBurnerWallet: true, // Burner wallet is enabled when false
 } as const satisfies ScaffoldConfig;
 
 export default scaffoldConfig;
