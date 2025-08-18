@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+
+# Node/Yarn
+node_modules/
+yarn-error.log
+.pnp.*
+
+# Env files (root and packages)
+.env
+.env.local
+.env.*.local
+packages/*/.env
+packages/*/.env.local
+packages/*/.env.*
+
+# Next.js
+packages/**/.next/
+packages/**/out/
+packages/**/.vercel/
+
+# Build artifacts
+packages/**/dist/
+packages/**/build/
+packages/**/coverage/
+
+# Hardhat
+packages/hardhat/cache/
+packages/hardhat/artifacts/
+packages/hardhat/typechain-types/
+
+# Logs
+**/*.log
+
+# Misc
+.turbo/
+.pnpm-store/
