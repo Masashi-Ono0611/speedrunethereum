@@ -707,7 +707,7 @@ const deployedContracts = {
   },
   11155111: {
     YourCollectible: {
-      address: "0xAEB3185409CA27D578A12C7a6e9967aC1DBf335F",
+      address: "0x0ae9A3fC3921Eaa1b255A1b9486660c2DfF2DD88",
       abi: [
         {
           inputs: [],
@@ -1415,7 +1415,7 @@ const deployedContracts = {
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
-      deployedOnBlock: 9009686,
+      deployedOnBlock: 9009806,
     },
   },
 } as const;
